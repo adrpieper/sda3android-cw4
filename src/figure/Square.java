@@ -3,7 +3,7 @@ package figure;
 /**
  * Created by Adrian on 2017-03-01.
  */
-public class Square {
+public class Square implements Figure{
     private double a;
 
     public Square(double a) {

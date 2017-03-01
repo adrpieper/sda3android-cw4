@@ -13,21 +13,20 @@ public class UserInterface {
         System.out.println("2 - koło");
         Scanner scanner = new Scanner(System.in);
         int i = scanner.nextInt();
+        Figure figure = null;
         switch (i) {
             case 1:
                 System.out.println("Podaj bok");
                 double a = scanner.nextDouble();
-                Square square = new Square(a);
-                System.out.println("Pole: " + square.countArea());
-                System.out.println("Obwód: " + square.countCircumference());
+                figure = new Square(a);
                 break;
             case 2:
                 System.out.println("Podaj promień");
                 double r = scanner.nextDouble();
-                Circle circle = new Circle(r);
-                System.out.println("Pole: " + circle.countArea());
-                System.out.println("Obwód: " + circle.countCircumference());
+                figure = new Circle(r);
                 break;
         }
+        System.out.println("Pole: " + figure.countArea());
+        System.out.println("Obwód: " + figure.countCircumference());
     }
 }
