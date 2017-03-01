@@ -1,5 +1,7 @@
 package figure;
 
+import static java.lang.Math.*;
+
 /**
  * Created by Adrian on 2017-03-01.
  */
@@ -11,10 +13,10 @@ public class Circle {
     }
 
     public double countArea(){
-        return r * r * Math.PI;
+        return r * r * PI;
     }
 
     public double countCircumference(){
-        return 2 * Math.PI * r ;
+        return 2 * PI * r ;
     }
 }
