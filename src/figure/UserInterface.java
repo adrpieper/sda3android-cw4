@@ -22,7 +22,11 @@ public class UserInterface {
                 System.out.println("Obwód: " + square.countCircumference());
                 break;
             case 2:
-
+                System.out.println("Podaj promień");
+                double r = scanner.nextDouble();
+                Circle circle = new Circle(r);
+                System.out.println("Pole: " + circle.countArea());
+                System.out.println("Obwód: " + circle.countCircumference());
                 break;
         }
     }
